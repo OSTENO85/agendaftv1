@@ -1,0 +1,76 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dashboard{
+  background-color: v.$amarillo;
+
+    @include m.tablet{
+        display: flex;
+        height:100vh ;
+    }
+
+    .principal{
+        flex: 1;
+        overflow: scroll;
+    }
+
+    .botonFiltro{
+        color: white;
+        background-color: v.$azul;
+        width: 10rem;
+        border-radius: .5rem;
+        border-color: v.$verde;
+    }
+    .labelFiltro{
+        text-transform: uppercase;
+        color: v.$azul;
+        font-size: 1.5rem;
+    }
+
+    .fondoFiltro{
+        background-color:v.$amarillo;
+        text-transform: uppercase;
+        border: none;
+        text-align: center;
+    }
+
+    .formFiltro{
+        text-align: center;
+    }
+
+    .contenido{
+        padding: 2rem;
+        .nombre-pagina{
+            font-size: 2.8rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .enlaceModificar{
+        text-transform: uppercase;
+        color: white;
+        background-color: v.$azul;
+        margin: 1rem;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    margin-bottom: 0;
+
+    .campo{
+        @include m.grid(2, 1rem);
+        margin: 0;
+    }
+
+
+
+}

@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-nuevo-menu{
+    display: flex;
+    justify-content: center;
+    .agregar-menu{
+        @include m.boton(v.$rojo, white);
+        margin-top: 10rem;
+        display: block;
+        margin: 5rem auto 0;
+    }
+
+}
+
+.listado-menu{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 1rem;
+
+
+    p{
+        font-size: 1.4rem;
+    }
+
+    .nombre-comida{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .tipo-comida{
+        text-transform: uppercase;
+    }
+
+    .opciones{
+
+        button{
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.contenedor-menu{
+    padding: .5rem 2rem;
+    border-bottom: 2px solid darken(v.$verde, 5%);
+}

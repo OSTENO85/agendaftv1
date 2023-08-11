@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login{
+    margin-top: 5rem;
+    background-color: white;
+    .agenda{
+        background: linear-gradient(to left, v.$rojo 0%, darken(v.$rojo, 15%)100%);
+        color: transparent;
+        background-clip: text;
+        text-align: center;
+        font-size: 7rem;
+
+        @include m.tablet{
+            font-size: 10rem;
+        }
+    }
+
+    input[type = "submit"]{
+        @include m.boton(v.$azul, white);
+        margin-top: 10rem;
+        display: block;
+        margin: 5rem auto 0;
+    }
+
+
+
+    
+}

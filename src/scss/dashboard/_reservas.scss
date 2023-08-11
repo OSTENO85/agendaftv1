@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+p{
+    color:black;
+    text-align: center;
+}
+
+.listado-misfechas{
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 4rem;
+    @include m.desktop{
+        @include m.grid(5, 3rem);
+
+    }
+
+    .descripcion-reserva{
+        background-color: v.$verde;
+        line-height: 2rem;
+        min-height: 1rem;
+        display: block;
+        align-items: center;
+        padding: 2rem;
+        border-radius: 10px 10px 0 0;
+        a{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .dia-semana{
+        text-transform: uppercase;
+        font-size: 2rem;
+        background-color: v.$verde;
+        color: white;
+    }
+
+    .fecha-reserva{
+        background-color: v.$verde;
+        font-size: 3rem;
+        color: white
+    }
+
+    .hora-reserva{
+        font-size: 2rem;
+        background-color: v.$verde;
+        font-weight: bold;
+        color: white;
+    }
+
+    .tipo-reserva{
+        color: v.$verde;
+        background-color: v.$verde;;
+    }
+
+    .estado-reserva{
+        font-size: 2rem;
+        color: white;
+        background-color: v.$verde;;
+        
+    }
+
+    .usuarios_nombre{
+        color: white;
+        background-color: v.$verde;
+        border-radius: 0 0 10px 10px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+  
+       
+    
+}
