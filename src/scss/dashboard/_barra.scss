@@ -29,9 +29,7 @@
 }
 
 .barra{
-   
-    background-color: black;
- 
+   background-color: red;
     
     @include m.tablet{
         background-color: v.$rojo;
