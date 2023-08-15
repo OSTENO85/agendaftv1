@@ -29,8 +29,9 @@
 }
 
 .barra{
-    display: none;
-
+   
+    background-color: red;
+ 
     
     @include m.tablet{
         background-color: v.$rojo;
@@ -54,10 +55,16 @@
     }
 
         .cerrar-sesion{
+            display: none;
+
+            @include m.tablet{
+                         
             @include m.boton(darken(v.$azul, 10%), white);
             font-size:1.4rem;
             padding: 1rem;
             border-radius: .5rem;
+            }
+   
         }
 
 
